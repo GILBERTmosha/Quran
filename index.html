@@ -4,111 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>MOSHA QURAN - Mawaidha ya Kila Siku</title>
-    <meta name="description" content="MOSHA QURAN: Pata mawaidha ya kila siku, mafunzo ya Quran na hekima kutoka kwa Gilbert Mosha. Nuru ya kila hatua yako.">
-    <meta name="keywords" content="MOSHA QURAN, Gilbert Mosha, Mawaidha ya Kiislamu, Quran Swahili, Tanzania Islam, Mawaidha ya Leo">
-    <meta name="author" content="Gilbert Mosha">
+    <title>MOSHA QURAN - Mawaidha na Hekima za Kila Siku</title>
+    <meta name="description" content="Pata mawaidha ya kila siku na mafunzo ya hekima kutoka kwa Gilbert Mosha kupitia MOSHA QURAN. Nuru ya kila hatua yako.">
+    <meta name="keywords" content="MOSHA QURAN, Gilbert Mosha, Mawaidha, Quran Swahili, Tanzania, Hekima za Kiislamu">
+    
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
     <script>
       window.OneSignal = window.OneSignal || [];
       OneSignal.push(function() {
         OneSignal.init({
-          appId: "WEKA_APP_ID_YAKO_HAPA", 
+          appId: "cce59567-5201-44ee-a9fa-e3dde616e217",
         });
       });
     </script>
 
     <style>
-        :root { 
-            --primary: #006400; 
-            --secondary: #d4af37; 
-        }
-
+        :root { --primary: #006400; --secondary: #d4af37; }
         body { 
             font-family: 'Trebuchet MS', sans-serif; 
             background: linear-gradient(135deg, #004d00, #1a1a1a, #002200); 
-            margin: 0; 
-            display: flex; 
-            justify-content: center; 
-            min-height: 100vh; 
+            margin: 0; display: flex; justify-content: center; min-height: 100vh; 
         }
-
         .main-card { 
-            max-width: 400px; 
-            width: 92%; 
-            background: #fff; 
-            padding: 25px; 
-            border-radius: 40px 10px; 
-            border: 3px solid var(--secondary); 
-            text-align: center; 
-            margin: 20px 0; 
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            max-width: 400px; width: 92%; background: #fff; padding: 25px; 
+            border-radius: 40px 10px; border: 3px solid var(--secondary); 
+            text-align: center; margin: 20px 0; box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
-
-        /* PROFILE RANGI RANGI */
-        .profile-container {
-            position: relative;
-            display: inline-block;
-            padding: 6px;
-            border-radius: 50%;
-            background: linear-gradient(45deg, #ff0080, #7928ca, #00b4db, #38ef7d, #f1c40f);
-            background-size: 300% 300%;
-            animation: color-rotate 4s linear infinite;
-            margin-top: 20px;
-        }
-
-        @keyframes color-rotate {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .user-img { 
-            width: 110px; 
-            height: 110px; 
-            border-radius: 50%; 
-            border: 3px solid #fff; 
-            object-fit: cover;
-            display: block;
-        }
-
         .brand-name { 
-            font-size: 30px; 
-            font-weight: 900; 
+            font-size: 30px; font-weight: 900; 
             background: linear-gradient(to right, #d4af37, #f1c40f, #b8860b);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin: 10px 0; 
-            text-transform: uppercase; 
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin: 10px 0; text-transform: uppercase; 
         }
-
         .date-badge { 
             background: linear-gradient(90deg, #006400, #d4af37); 
-            color: white; 
-            padding: 10px 20px; 
-            border-radius: 50px; 
-            font-size: 14px; 
-            font-weight: bold; 
-            margin-bottom: 15px;
-            display: inline-block;
+            color: white; padding: 10px 20px; border-radius: 50px; 
+            font-size: 14px; font-weight: bold; margin-bottom: 15px; display: inline-block;
         }
-
         .btn-style { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            padding: 16px 22px; 
-            color: white; 
-            text-decoration: none; 
-            border-radius: 18px; 
-            font-weight: bold; 
-            margin: 12px 0; 
-            transition: 0.3s;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 16px 22px; color: white; text-decoration: none; 
+            border-radius: 18px; font-weight: bold; margin: 12px 0; transition: 0.3s;
         }
-
-        /* RANGI ZA VIFUNGO */
         .color-0 { background: linear-gradient(45deg, #f1c40f, #d35400); }
         .color-1 { background: linear-gradient(45deg, #3498db, #2980b9); }
         .color-2 { background: linear-gradient(45deg, #ff0080, #7928ca); }
@@ -117,6 +56,17 @@
         .color-5 { background: linear-gradient(45deg, #d4af37, #8b4513); }
         .color-6 { background: linear-gradient(45deg, #2c3e50, #4ca1af); }
 
+        .profile-glow {
+            position: relative; display: inline-block; padding: 6px;
+            border-radius: 50%; background: linear-gradient(45deg, #ff0080, #7928ca, #00b4db, #38ef7d, #f1c40f);
+            background-size: 300% 300%; animation: move-colors 4s linear infinite; margin-top: 20px;
+        }
+        @keyframes move-colors {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .user-img { width: 110px; height: 110px; border-radius: 50%; border: 3px solid #fff; object-fit: cover; display: block; }
     </style>
 </head>
 <body>
@@ -133,7 +83,7 @@
 
     <div id="vifungo-box"></div>
 
-    <div class="profile-container">
+    <div class="profile-glow">
         <img src="https://i.ibb.co/dTsxCcS/1773083999171.png" class="user-img">
     </div>
 
@@ -149,25 +99,17 @@
         const now = new Date();
         const sikuZaWiki = ["JUMAPILI", "JUMATATU", "JUMANNE", "JUMATANO", "ALHAMISI", "IJUMAA", "JUMAMOSI"];
         const miezi = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ago", "Sep", "Okt", "Nov", "Des"];
-
         document.getElementById('live-date').innerHTML = `✨ LEO: ${now.getDate()} ${miezi[now.getMonth()]} ${now.getFullYear()} ✨`;
 
         const startDate = new Date(2026, 2, 9); 
         container.innerHTML = "";
-        
         let tempDate = new Date(startDate);
         while (tempDate <= now) {
             let sikuJina = sikuZaWiki[tempDate.getDay()];
             let d = String(tempDate.getDate()).padStart(2, '0');
             let m = String(tempDate.getMonth() + 1).padStart(2, '0');
             let fileName = `quran-${d}-${m}-${tempDate.getFullYear()}.html`;
-
-            container.innerHTML += `
-                <a href="${fileName}" class="btn-style color-${tempDate.getDay()}">
-                    <span>☪️ ${sikuJina}</span>
-                    <span style="font-size:12px; opacity:0.9;">${d} ${miezi[tempDate.getMonth()]}</span>
-                </a>
-            `;
+            container.innerHTML += `<a href="${fileName}" class="btn-style color-${tempDate.getDay()}"><span>☪️ ${sikuJina}</span><span style="font-size:12px; opacity:0.9;">${d} ${miezi[tempDate.getMonth()]}</span></a>`;
             tempDate.setDate(tempDate.getDate() + 1);
         }
     }
