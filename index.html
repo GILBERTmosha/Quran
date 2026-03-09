@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>MOSHA QURAN - Mawaidha na Hekima za Kila Siku</title>
-    <meta name="description" content="Pata mawaidha ya kila siku na mafunzo ya hekima kutoka kwa Gilbert Mosha kupitia MOSHA QURAN. Nuru ya kila hatua yako.">
+    <meta name="description" content="Pata mawaidha ya kila siku na mafunzo ya hekima kupitia MOSHA QURAN. Nuru ya kila hatua yako kutoka kwa Gilbert Mosha.">
     <meta name="keywords" content="MOSHA QURAN, Gilbert Mosha, Mawaidha, Quran Swahili, Tanzania, Hekima za Kiislamu">
     
     <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
-      window.OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(async function(OneSignal) {
+        await OneSignal.init({
           appId: "cce59567-5201-44ee-a9fa-e3dde616e217",
         });
       });
@@ -56,6 +56,7 @@
         .color-5 { background: linear-gradient(45deg, #d4af37, #8b4513); }
         .color-6 { background: linear-gradient(45deg, #2c3e50, #4ca1af); }
 
+        /* PROFILE YENYE RANGI RANGI KAMA ULIVYOTAKA */
         .profile-glow {
             position: relative; display: inline-block; padding: 6px;
             border-radius: 50%; background: linear-gradient(45deg, #ff0080, #7928ca, #00b4db, #38ef7d, #f1c40f);
@@ -94,6 +95,7 @@
 </div>
 
 <script>
+    // Kutengeneza vifungo vya siku moja kwa moja kulingana na tarehe
     function generateSmartButtons() {
         const container = document.getElementById('vifungo-box');
         const now = new Date();
@@ -101,7 +103,7 @@
         const miezi = ["Jan", "Feb", "Mar", "Apr", "Mei", "Jun", "Jul", "Ago", "Sep", "Okt", "Nov", "Des"];
         document.getElementById('live-date').innerHTML = `✨ LEO: ${now.getDate()} ${miezi[now.getMonth()]} ${now.getFullYear()} ✨`;
 
-        const startDate = new Date(2026, 2, 9); 
+        const startDate = new Date(2026, 2, 9); // Kuanzia tarehe 9 Machi
         container.innerHTML = "";
         let tempDate = new Date(startDate);
         while (tempDate <= now) {
