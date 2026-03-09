@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mawaidha ya Jumanne - MOSHA QURAN</title>
+<style>
+    /* KUFICHA GOOGLE BAR */
+    iframe.goog-te-banner-frame, .goog-te-banner-frame.skiptranslate { display: none !important; }
+    body { top: 0px !important; position: static !important; }
+    #google_translate_element { display: none; }
+
+    body { 
+        font-family: 'Trebuchet MS', sans-serif; 
+        background: linear-gradient(135deg, #1a1a1a 0%, #004d00 100%);
+        display: flex; justify-content: center; align-items: center;
+        padding: 20px; margin: 0; min-height: 100vh;
+    }
+    .card { 
+        max-width: 480px; width: 100%; border: 3px solid #d4af37; 
+        padding: 25px; border-radius: 40px; background-color: #ffffff;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.6); text-align: center;
+        position: relative; overflow: hidden; border-bottom: 15px solid #d4af37;
+    }
+
+    .lang-switcher { display: flex; justify-content: flex-end; gap: 8px; margin-bottom: 10px; }
+    .lang-btn { background: #eee; border: 1px solid #ccc; padding: 5px 12px; border-radius: 12px; cursor: pointer; font-size: 11px; font-weight: bold; }
+
+    .back-nav { display: flex; justify-content: flex-start; margin-top: -35px; margin-bottom: 20px; }
+    .btn-back {
+        text-decoration: none; color: #006400; font-size: 13px; font-weight: bold;
+        display: flex; align-items: center; gap: 5px; background: #f0fff0;
+        padding: 6px 18px; border-radius: 50px; border: 1px solid #006400;
+    }
+    
+    .top-img {
+        width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+        border: 5px solid #d4af37; box-shadow: 0 0 25px rgba(212, 175, 55, 0.4);
+        margin-bottom: 10px;
+    }
+
+    h2 { color: #006400; margin: 10px 0; font-size: 24px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px; }
+
+    .verse-container { 
+        background: #f1f8e9; padding: 25px; border-radius: 30px;
+        border-right: 6px solid #d4af37; border-left: 6px solid #d4af37; margin: 20px 0; 
+    }
+    .arabic-text {
+        font-size: 26px; color: #1b5e20; font-weight: bold;
+        margin-bottom: 12px; display: block; line-height: 1.8;
+        direction: rtl;
+    }
+    .swahili-text {
+        font-family: 'Georgia', serif; font-style: italic; color: #3e2723;
+        font-size: 17px; line-height: 1.6; display: block;
+    }
+
+    .teaching-box {
+        background: #fffdf7; border: 1px dashed #d4af37; border-radius: 20px;
+        padding: 18px; margin: 15px 0; text-align: left;
+    }
+    .teaching-title {
+        color: #8b4513; display: block; text-align: center; 
+        font-weight: bold; margin-bottom: 10px; text-decoration: underline;
+    }
+
+    .action-area { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
+    .btn-small {
+        border: none; padding: 12px 20px; border-radius: 15px;
+        font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 6px;
+        transition: 0.3s; font-size: 14px;
+    }
+    .btn-copy { background: #eceff1; color: #37474f; }
+    .btn-share { background: #25d366; color: white; }
+
+    .footer { 
+        margin-top: 25px; padding: 20px; background-color: #fafafa;
+        border-radius: 35px; border: 1px solid #eee;
+    }
+    .btn-contact {
+        display: flex; align-items: center; justify-content: center; gap: 10px;
+        padding: 14px; margin: 10px 0; border-radius: 50px;
+        text-decoration: none; font-weight: bold; color: white; font-size: 15px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .bg-wa { background: #128c7e; }
+    .bg-sms { background: #e67e22; }
+    .bg-call { background: #004d00; }
+
+    /* PROFILE GLOW - RANGI RANGI */
+    .profile-glow {
+        position: relative; display: inline-block; padding: 6px;
+        border-radius: 50%; background: linear-gradient(45deg, #f1c40f, #38ef7d, #00b4db, #7928ca, #ff0080);
+        background-size: 300% 300%; animation: move-colors 4s linear infinite;
+        margin-top: 15px;
+    }
+    @keyframes move-colors {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    .user-img { width: 90px; height: 90px; border-radius: 50%; border: 3px solid #fff; object-fit: cover; display: block; }
+</style>
+</head>
+<body>
+
+<div class="card">
+    <div class="lang-switcher">
+        <button class="lang-btn" onclick="changeLang('sw')">🇹🇿 SW</button>
+        <button class="lang-btn" onclick="changeLang('en')">🇺🇸 EN</button>
+    </div>
+    <div id="google_translate_element"></div>
+
+    <div class="back-nav">
+        <a href="index.html" class="btn-back">⬅️ Rudi Nyumbani</a>
+    </div>
+
+    <img src="https://i.ibb.co/wNGCZmQf/images-2.jpg" class="top-img">
+    
+    <h2>Mawaidha ya Hekima</h2>
+    <p style="color: #d4af37; font-weight: bold; margin-top: -10px;">JUMANNE, 10 MACHI 2026</p>
+    
+    <div class="verse-container">
+        <span class="arabic-text">أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ</span>
+        <span class="swahili-text">"Hakika kwa kumkumbuka Mwenyezi Mungu ndipo nyoyo hutulia."</span>
+        <br><strong>— Qur'an 13:28 —</strong>
+    </div>
+
+    <div class="teaching-box">
+        <span class="teaching-title">💡 MAFUNZO YA JUMANNE</span>
+        <p style="color: #2e7d32; font-size: 15px; line-height: 1.7;">
+            1. <b>Amani ya Moyo:</b> Katika pilkapilka za kutafuta riziki leo, usisahau kumtaja Allah; hapo ndipo utakapopata utulivu wa kweli wa nafsi.<br>
+            2. <b>Toba:</b> Mlango wa rehema upo wazi wakati wote. Geukia kwa Muumba wako kwa kila hitaji lako.<br>
+            3. <b>Uvumilivu:</b> Mafanikio hayaji kwa haraka, yanahitaji subira na imani thabiti kwa mipango ya Allah.
+        </p>
+    </div>
+
+    <div class="action-area">
+        <button class="btn-small btn-copy" onclick="copyNeno()">📋 Nakili</button>
+        <button class="btn-small btn-share" onclick="shareNeno()">📲 Shiriki</button>
+    </div>
+
+    <div class="footer">
+        <a href="javascript:void(0)" onclick="sendWhatsApp()" class="btn-contact bg-wa">🟢 WhatsApp</a>
+        <a href="javascript:void(0)" onclick="sendSMS()" class="btn-contact bg-sms">✉️ Tuma SMS</a>
+        <a href="tel:0793770731" class="btn-contact bg-call">📞 Piga Simu</a>
+
+        <div class="profile-glow">
+            <img src="https://i.ibb.co/dTsxCcS/1773083999171.png" class="user-img">
+        </div>
+        <p style="margin:8px 0;"><strong>Gilbert Mosha</strong><br><small>0793770731</small></p>
+    </div>
+</div>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'sw', includedLanguages: 'en,sw', autoDisplay: false}, 'google_translate_element');
+    }
+    function changeLang(langCode) {
+        var select = document.querySelector('select.goog-te-combo');
+        if (select) { select.value = langCode; select.dispatchEvent(new Event('change')); }
+    }
+
+    const fullMessage = `🌙 *MAWAIDHA YA HEKIMA: JUMANNE*\n\n"أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ"\n(Hakika kwa kumkumbuka Mwenyezi Mungu ndipo nyoyo hutulia.)\n\n💡 *MAFUNZO:*\n1. Tafuta amani ya moyo kwa dhikr.\n2. Omba toba na rehema kila wakati.\n3. Allah ndiye kimbilio la kweli.\n\n_Imeandaliwa na Gilbert Mosha_ ✨`;
+
+    function copyNeno() {
+        navigator.clipboard.writeText(fullMessage).then(() => {
+            alert("✅ Mawaidha yamenakiliwa!");
+        });
+    }
+
+    function shareNeno() {
+        const url = "whatsapp://send?text=" + encodeURIComponent(fullMessage);
+        window.location.href = url;
+    }
+
+    function sendWhatsApp() {
+        const url = "https://wa.me/255793770731?text=" + encodeURIComponent("Assalam Alaykum Gilbert, nimebarikiwa na Mawaidha ya Jumanne:\n\n" + fullMessage);
+        window.location.href = url;
+    }
+
+    function sendSMS() {
+        const smsUrl = "sms:0793770731?body=" + encodeURIComponent("Assalam Alaykum, nimepokea mawaidha ya Jumanne: " + fullMessage);
+        window.location.href = smsUrl;
+    }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
+
