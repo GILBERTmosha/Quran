@@ -3,8 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOSHA QURAN - Gilbert Mosha</title>
     
+    <title>MOSHA QURAN - Mawaidha ya Kila Siku</title>
+    <meta name="description" content="MOSHA QURAN: Pata mawaidha ya kila siku, mafunzo ya Quran na hekima kutoka kwa Gilbert Mosha. Nuru ya kila hatua yako.">
+    <meta name="keywords" content="MOSHA QURAN, Gilbert Mosha, Mawaidha ya Kiislamu, Quran Swahili, Tanzania Islam, Mawaidha ya Leo">
+    <meta name="author" content="Gilbert Mosha">
+
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      window.OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "WEKA_APP_ID_YAKO_HAPA", 
+        });
+      });
+    </script>
+
     <style>
         :root { 
             --primary: #006400; 
@@ -32,7 +46,7 @@
             box-shadow: 0 20px 50px rgba(0,0,0,0.5);
         }
 
-        /* PROFILE YENYE RANGI RANGI */
+        /* PROFILE RANGI RANGI */
         .profile-container {
             position: relative;
             display: inline-block;
@@ -60,7 +74,7 @@
         }
 
         .brand-name { 
-            font-size: 28px; 
+            font-size: 30px; 
             font-weight: 900; 
             background: linear-gradient(to right, #d4af37, #f1c40f, #b8860b);
             -webkit-background-clip: text;
@@ -94,7 +108,7 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
-        /* RANGI ZA VIFUNGO (Zinaanza na leo Jumatatu tarehe 9) */
+        /* RANGI ZA VIFUNGO */
         .color-0 { background: linear-gradient(45deg, #f1c40f, #d35400); }
         .color-1 { background: linear-gradient(45deg, #3498db, #2980b9); }
         .color-2 { background: linear-gradient(45deg, #ff0080, #7928ca); }
@@ -111,7 +125,7 @@
     <img src="https://i.ibb.co/wNGCZmQf/images-2.jpg" style="width:120px; height:120px; border-radius:50%; border:3px solid var(--secondary); object-fit:cover;">
     
     <div style="margin-top: 15px;">
-        <div class="date-badge" id="live-date">📅 Pakia Tarehe...</div>
+        <div class="date-badge" id="live-date">📅 Pakia...</div>
     </div>
 
     <div class="brand-name">MOSHA QURAN</div>
@@ -138,7 +152,6 @@
 
         document.getElementById('live-date').innerHTML = `✨ LEO: ${now.getDate()} ${miezi[now.getMonth()]} ${now.getFullYear()} ✨`;
 
-        // INAANZA LEO: 9 Machi 2026
         const startDate = new Date(2026, 2, 9); 
         container.innerHTML = "";
         
